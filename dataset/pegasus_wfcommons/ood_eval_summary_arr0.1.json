@@ -1,0 +1,43 @@
+{
+  "dag_dir": "dataset/pegasus_wfcommons/dags",
+  "arrival_rate": 0.15,
+  "arrival_rate_meta": {
+    "mean_nodes": 136.795,
+    "ref_nodes": 31.0,
+    "ref_arrival": 0.55,
+    "scaled": false
+  },
+  "episodes": 5,
+  "max_dags": 1000,
+  "checkpoint": "runs/hierarchical_ppo/20260729_140051_seed42_cpu_dagcomplete_edftask_g2_peft0_edf_ppo/best_dag_model.pt",
+  "task_policy": "edf",
+  "summary": [
+    {
+      "name": "HEFT",
+      "dag_mean": 0.20400000000000001,
+      "dag_std": 0.028142494558940582,
+      "task_mean": 0.5638612522387515,
+      "task_std": 0.024052911400455384,
+      "delay_mean": 24.180963231349466,
+      "delay_std": 5.254220565911664
+    },
+    {
+      "name": "EDF",
+      "dag_mean": 0.2824,
+      "dag_std": 0.032444414003029866,
+      "task_mean": 0.48528966701999343,
+      "task_std": 0.05747984824853213,
+      "delay_mean": 10.27554810787779,
+      "delay_std": 3.1197558067241227
+    },
+    {
+      "name": "Learned(edf)",
+      "dag_mean": 0.2888,
+      "dag_std": 0.043810501024297815,
+      "task_mean": 0.44055996198691466,
+      "task_std": 0.05155700463417444,
+      "delay_mean": 13.810511040569006,
+      "delay_std": 4.363116808708522
+    }
+  ]
+}

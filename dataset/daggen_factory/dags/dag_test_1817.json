@@ -1,0 +1,344 @@
+{
+  "dag_id": "test_1817",
+  "split": "test",
+  "num_tasks": 23,
+  "tasks": [
+    {
+      "task_id": 0,
+      "source_task_id": 0,
+      "computation": 212.55,
+      "data_size": 19.47,
+      "parents": [],
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 1,
+      "source_task_id": 1,
+      "computation": 127.58,
+      "data_size": 67.85,
+      "parents": [
+        0
+      ],
+      "children": [
+        11,
+        12,
+        10,
+        8,
+        9
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 2,
+      "source_task_id": 2,
+      "computation": 159.25,
+      "data_size": 24.14,
+      "parents": [
+        0
+      ],
+      "children": [
+        11,
+        10,
+        13
+      ],
+      "candidate_type": "edge_only"
+    },
+    {
+      "task_id": 3,
+      "source_task_id": 3,
+      "computation": 452.51,
+      "data_size": 17.75,
+      "parents": [
+        0
+      ],
+      "children": [
+        11,
+        12,
+        13
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 4,
+      "source_task_id": 4,
+      "computation": 121.52,
+      "data_size": 34.43,
+      "parents": [
+        0
+      ],
+      "children": [
+        14
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 5,
+      "source_task_id": 5,
+      "computation": 152.46,
+      "data_size": 32.25,
+      "parents": [
+        0
+      ],
+      "children": [
+        22
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 6,
+      "source_task_id": 6,
+      "computation": 119.43,
+      "data_size": 29.71,
+      "parents": [
+        0
+      ],
+      "children": [
+        17,
+        20,
+        21
+      ],
+      "candidate_type": "edge_only"
+    },
+    {
+      "task_id": 7,
+      "source_task_id": 7,
+      "computation": 260.01,
+      "data_size": 57.77,
+      "parents": [
+        0
+      ],
+      "children": [
+        22
+      ],
+      "candidate_type": "cloud_only"
+    },
+    {
+      "task_id": 8,
+      "source_task_id": 8,
+      "computation": 103.59,
+      "data_size": 35.66,
+      "parents": [
+        1
+      ],
+      "children": [
+        22
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 9,
+      "source_task_id": 9,
+      "computation": 332.95,
+      "data_size": 35.42,
+      "parents": [
+        1
+      ],
+      "children": [
+        22
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 10,
+      "source_task_id": 10,
+      "computation": 149.25,
+      "data_size": 17.23,
+      "parents": [
+        2,
+        1
+      ],
+      "children": [
+        14
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 11,
+      "source_task_id": 11,
+      "computation": 298.84,
+      "data_size": 21.59,
+      "parents": [
+        2,
+        3,
+        1
+      ],
+      "children": [
+        14
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 12,
+      "source_task_id": 12,
+      "computation": 135.31,
+      "data_size": 68.0,
+      "parents": [
+        3,
+        1
+      ],
+      "children": [
+        22
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 13,
+      "source_task_id": 13,
+      "computation": 4486.23,
+      "data_size": 13.09,
+      "parents": [
+        2,
+        3
+      ],
+      "children": [
+        14
+      ],
+      "candidate_type": "cloud_only"
+    },
+    {
+      "task_id": 14,
+      "source_task_id": 14,
+      "computation": 355.89,
+      "data_size": 36.3,
+      "parents": [
+        4,
+        11,
+        10,
+        13
+      ],
+      "children": [
+        15,
+        16
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 15,
+      "source_task_id": 15,
+      "computation": 233.66,
+      "data_size": 17.45,
+      "parents": [
+        14
+      ],
+      "children": [
+        17,
+        18,
+        21
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 16,
+      "source_task_id": 16,
+      "computation": 249.32,
+      "data_size": 30.35,
+      "parents": [
+        14
+      ],
+      "children": [
+        19,
+        20,
+        21
+      ],
+      "candidate_type": "cloud_only"
+    },
+    {
+      "task_id": 17,
+      "source_task_id": 17,
+      "computation": 245.7,
+      "data_size": 67.5,
+      "parents": [
+        6,
+        15
+      ],
+      "children": [
+        22
+      ],
+      "candidate_type": "cloud_only"
+    },
+    {
+      "task_id": 18,
+      "source_task_id": 18,
+      "computation": 204.03,
+      "data_size": 38.52,
+      "parents": [
+        15
+      ],
+      "children": [
+        22
+      ],
+      "candidate_type": "edge_only"
+    },
+    {
+      "task_id": 19,
+      "source_task_id": 19,
+      "computation": 158.04,
+      "data_size": 29.49,
+      "parents": [
+        16
+      ],
+      "children": [
+        22
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 20,
+      "source_task_id": 20,
+      "computation": 179.12,
+      "data_size": 22.42,
+      "parents": [
+        6,
+        16
+      ],
+      "children": [
+        22
+      ],
+      "candidate_type": "edge_only"
+    },
+    {
+      "task_id": 21,
+      "source_task_id": 21,
+      "computation": 196.79,
+      "data_size": 35.97,
+      "parents": [
+        6,
+        15,
+        16
+      ],
+      "children": [
+        22
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 22,
+      "source_task_id": 22,
+      "computation": 6641.02,
+      "data_size": 27.34,
+      "parents": [
+        17,
+        19,
+        18,
+        7,
+        20,
+        21,
+        12,
+        8,
+        5,
+        9
+      ],
+      "children": [],
+      "candidate_type": "flexible"
+    }
+  ]
+}

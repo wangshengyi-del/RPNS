@@ -1,0 +1,44 @@
+{
+  "seed": 42,
+  "attribute_mode": "synthetic",
+  "split": "test",
+  "num_dags": 1000,
+  "specs": [
+    {
+      "recipe": "epigenomics",
+      "requested_num_tasks": 50,
+      "count": 200
+    },
+    {
+      "recipe": "epigenomics",
+      "requested_num_tasks": 100,
+      "count": 200
+    },
+    {
+      "recipe": "montage",
+      "requested_num_tasks": 100,
+      "count": 200
+    },
+    {
+      "recipe": "montage",
+      "requested_num_tasks": 200,
+      "count": 150
+    },
+    {
+      "recipe": "seismology",
+      "requested_num_tasks": 200,
+      "count": 150
+    },
+    {
+      "recipe": "seismology",
+      "requested_num_tasks": 300,
+      "count": 100
+    }
+  ],
+  "node_stats": {
+    "mean": 136.795,
+    "min": 45,
+    "max": 298
+  },
+  "out_dir": "dataset/pegasus_wfcommons/dags"
+}

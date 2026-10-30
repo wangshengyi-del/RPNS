@@ -1,0 +1,369 @@
+{
+  "dag_id": "test_1703",
+  "split": "test",
+  "num_tasks": 26,
+  "tasks": [
+    {
+      "task_id": 0,
+      "source_task_id": 0,
+      "computation": 168.77,
+      "data_size": 30.11,
+      "parents": [],
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        25
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 1,
+      "source_task_id": 1,
+      "computation": 110.01,
+      "data_size": 31.18,
+      "parents": [
+        0
+      ],
+      "children": [
+        25
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 2,
+      "source_task_id": 2,
+      "computation": 150.5,
+      "data_size": 28.45,
+      "parents": [
+        0
+      ],
+      "children": [
+        13,
+        12
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 3,
+      "source_task_id": 3,
+      "computation": 151.01,
+      "data_size": 34.04,
+      "parents": [
+        0
+      ],
+      "children": [
+        13
+      ],
+      "candidate_type": "cloud_only"
+    },
+    {
+      "task_id": 4,
+      "source_task_id": 4,
+      "computation": 693.39,
+      "data_size": 44.91,
+      "parents": [
+        0
+      ],
+      "children": [
+        25
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 5,
+      "source_task_id": 5,
+      "computation": 110.63,
+      "data_size": 20.67,
+      "parents": [
+        0
+      ],
+      "children": [
+        15
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 6,
+      "source_task_id": 6,
+      "computation": 269.44,
+      "data_size": 40.55,
+      "parents": [
+        0
+      ],
+      "children": [
+        25
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 7,
+      "source_task_id": 7,
+      "computation": 596.68,
+      "data_size": 26.43,
+      "parents": [
+        0
+      ],
+      "children": [
+        23
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 8,
+      "source_task_id": 8,
+      "computation": 298.73,
+      "data_size": 76.06,
+      "parents": [
+        0
+      ],
+      "children": [
+        23
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 9,
+      "source_task_id": 9,
+      "computation": 365.65,
+      "data_size": 22.84,
+      "parents": [
+        0
+      ],
+      "children": [
+        23
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 10,
+      "source_task_id": 10,
+      "computation": 129.07,
+      "data_size": 29.82,
+      "parents": [
+        0
+      ],
+      "children": [
+        25
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 11,
+      "source_task_id": 11,
+      "computation": 113.62,
+      "data_size": 24.57,
+      "parents": [
+        0
+      ],
+      "children": [
+        25
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 12,
+      "source_task_id": 12,
+      "computation": 257.12,
+      "data_size": 39.52,
+      "parents": [
+        2
+      ],
+      "children": [
+        14,
+        15
+      ],
+      "candidate_type": "edge_only"
+    },
+    {
+      "task_id": 13,
+      "source_task_id": 13,
+      "computation": 688.35,
+      "data_size": 28.53,
+      "parents": [
+        2,
+        3
+      ],
+      "children": [
+        25
+      ],
+      "candidate_type": "cloud_only"
+    },
+    {
+      "task_id": 14,
+      "source_task_id": 14,
+      "computation": 150.53,
+      "data_size": 54.3,
+      "parents": [
+        12
+      ],
+      "children": [
+        16,
+        17
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 15,
+      "source_task_id": 15,
+      "computation": 230.77,
+      "data_size": 44.57,
+      "parents": [
+        5,
+        12
+      ],
+      "children": [
+        18
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 16,
+      "source_task_id": 16,
+      "computation": 224.1,
+      "data_size": 49.51,
+      "parents": [
+        14
+      ],
+      "children": [
+        19
+      ],
+      "candidate_type": "edge_only"
+    },
+    {
+      "task_id": 17,
+      "source_task_id": 17,
+      "computation": 254.07,
+      "data_size": 22.74,
+      "parents": [
+        14
+      ],
+      "children": [
+        20
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 18,
+      "source_task_id": 18,
+      "computation": 205.68,
+      "data_size": 51.33,
+      "parents": [
+        15
+      ],
+      "children": [
+        20
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 19,
+      "source_task_id": 19,
+      "computation": 140.46,
+      "data_size": 23.17,
+      "parents": [
+        16
+      ],
+      "children": [
+        21
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 20,
+      "source_task_id": 20,
+      "computation": 364.85,
+      "data_size": 19.71,
+      "parents": [
+        18,
+        17
+      ],
+      "children": [
+        21
+      ],
+      "candidate_type": "edge_only"
+    },
+    {
+      "task_id": 21,
+      "source_task_id": 21,
+      "computation": 128.11,
+      "data_size": 37.36,
+      "parents": [
+        19,
+        20
+      ],
+      "children": [
+        22
+      ],
+      "candidate_type": "edge_only"
+    },
+    {
+      "task_id": 22,
+      "source_task_id": 22,
+      "computation": 207.18,
+      "data_size": 16.07,
+      "parents": [
+        21
+      ],
+      "children": [
+        23
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 23,
+      "source_task_id": 23,
+      "computation": 301.59,
+      "data_size": 36.64,
+      "parents": [
+        22,
+        7,
+        8,
+        9
+      ],
+      "children": [
+        24
+      ],
+      "candidate_type": "flexible"
+    },
+    {
+      "task_id": 24,
+      "source_task_id": 24,
+      "computation": 863.44,
+      "data_size": 50.88,
+      "parents": [
+        23
+      ],
+      "children": [
+        25
+      ],
+      "candidate_type": "cloud_only"
+    },
+    {
+      "task_id": 25,
+      "source_task_id": 25,
+      "computation": 320.83,
+      "data_size": 32.5,
+      "parents": [
+        24,
+        10,
+        11,
+        0,
+        1,
+        13,
+        4,
+        6
+      ],
+      "children": [],
+      "candidate_type": "edge_only"
+    }
+  ]
+}

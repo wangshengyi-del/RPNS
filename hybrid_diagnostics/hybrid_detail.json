@@ -1,0 +1,1024 @@
+{
+  "checkpoint": "runs/hierarchical_ppo/20260806_110953_seed42_ppo_twostage/best_dag_model.pt",
+  "split": "test",
+  "episodes": 5,
+  "max_dags": 1000,
+  "wait_time_mean": 4.778836355677641,
+  "wait_time_std": 10.893133522191183,
+  "summary": [
+    {
+      "name": "PPO-task + PPO-proc",
+      "task_mean": 0.8951032258064515,
+      "task_std": 0.01686447663938905,
+      "dag_mean": 0.7218,
+      "dag_std": 0.030406578235638446,
+      "delay_mean": 1.3913722384583094,
+      "delay_std": 0.5775615003872523,
+      "energy_mean": 17.350872691011148,
+      "energy_std": 0.026901985488531902,
+      "p1.5_dag_rate": 0.4903614457831325,
+      "p1.5_task_rate": 0.7744711575989384,
+      "p1.5_avg_delay": 2.6360519381566654,
+      "p2_dag_rate": 0.7395054629097182,
+      "p2_task_rate": 0.9262442349367463,
+      "p2_avg_delay": 1.1061715150008375,
+      "p3_dag_rate": 0.9425359150530919,
+      "p3_task_rate": 0.985532581831334,
+      "p3_avg_delay": 0.41914838183450137
+    },
+    {
+      "name": "EDF-task + PPO-proc",
+      "task_mean": 0.9217935483870969,
+      "task_std": 0.03638444625441448,
+      "dag_mean": 0.7876000000000001,
+      "dag_std": 0.05004637849035632,
+      "delay_mean": 0.18879912071482985,
+      "delay_std": 0.14618727540814996,
+      "energy_mean": 17.355342619494174,
+      "energy_std": 0.014392179110541085,
+      "p1.5_dag_rate": 0.6469879518072289,
+      "p1.5_task_rate": 0.8906603699945359,
+      "p1.5_avg_delay": 0.21685058321645567,
+      "p2_dag_rate": 0.8292121909143185,
+      "p2_task_rate": 0.9330604382374187,
+      "p2_avg_delay": 0.1778262686729676,
+      "p3_dag_rate": 0.8881948782011243,
+      "p3_task_rate": 0.9416279864167019,
+      "p3_avg_delay": 0.17181887606385202
+    },
+    {
+      "name": "PPO-task + EFT-proc",
+      "task_mean": 0.8623483870967741,
+      "task_std": 0.024942150759213133,
+      "dag_mean": 0.6494,
+      "dag_std": 0.040907700986489076,
+      "delay_mean": 1.1845436730366854,
+      "delay_std": 0.4942647574794156,
+      "energy_mean": 17.62080980505317,
+      "energy_std": 0.049669373670364,
+      "p1.5_dag_rate": 0.43132530120481927,
+      "p1.5_task_rate": 0.7259971899149169,
+      "p1.5_avg_delay": 2.327988451807841,
+      "p2_dag_rate": 0.6417481311098332,
+      "p2_task_rate": 0.8857359832558485,
+      "p2_avg_delay": 1.0060440699910844,
+      "p3_dag_rate": 0.8838226108682073,
+      "p3_task_rate": 0.977374565475114,
+      "p3_avg_delay": 0.20080607232697462
+    },
+    {
+      "name": "EDF-task + EFT-proc",
+      "task_mean": 0.881425806451613,
+      "task_std": 0.04433743189231206,
+      "dag_mean": 0.6902000000000001,
+      "dag_std": 0.05608350916267633,
+      "delay_mean": 0.2933821687005636,
+      "delay_std": 0.17595196961745674,
+      "energy_mean": 17.605617392942868,
+      "energy_std": 0.042882130224605026,
+      "p1.5_dag_rate": 0.5259036144578313,
+      "p1.5_task_rate": 0.8220279447349934,
+      "p1.5_avg_delay": 0.3683460411866942,
+      "p2_dag_rate": 0.7061529614721104,
+      "p2_task_rate": 0.8954972309174091,
+      "p2_avg_delay": 0.2684730981892962,
+      "p3_dag_rate": 0.8432229856339788,
+      "p3_task_rate": 0.9273213173387989,
+      "p3_avg_delay": 0.24321573564559854
+    }
+  ],
+  "details": {
+    "PPO-task + PPO-proc": {
+      "avg_completion_rate": 0.8951032258064515,
+      "avg_dag_completion_rate": 0.7218,
+      "avg_task_delay": 1.3913722384583094,
+      "avg_energy": 17.350872691011148,
+      "avg_reward": 7785.72247524281,
+      "per_episode": [
+        {
+          "steps": 31000,
+          "total_reward": 8044.03260926753,
+          "completion_rate": 0.8987741935483871,
+          "dag_completion_rate": 0.713,
+          "avg_task_delay": 1.0014701103588264,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.353539413139817,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 370,
+              "on_time_dags": 187,
+              "total_tasks": 11058,
+              "on_time_tasks": 8774,
+              "total_delay": 22434.057716240703,
+              "total_energy": 191078.94332799094,
+              "total_comp": 3869200.79
+            },
+            "2.0": {
+              "total_dags": 338,
+              "on_time_dags": 254,
+              "total_tasks": 10586,
+              "on_time_tasks": 9920,
+              "total_delay": 6403.7971599686825,
+              "total_energy": 185439.3755702735,
+              "total_comp": 3703477.110000001
+            },
+            "3.0": {
+              "total_dags": 292,
+              "on_time_dags": 272,
+              "total_tasks": 9356,
+              "on_time_tasks": 9168,
+              "total_delay": 2207.718544914227,
+              "total_energy": 161441.4029090692,
+              "total_comp": 3170739.720000002
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 6542.053896718273,
+          "completion_rate": 0.8754193548387097,
+          "dag_completion_rate": 0.697,
+          "avg_task_delay": 1.6813928007019678,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.344103866726968,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 332,
+              "on_time_dags": 144,
+              "total_tasks": 10609,
+              "on_time_tasks": 7871,
+              "total_delay": 32715.102441535673,
+              "total_energy": 179617.1589211169,
+              "total_comp": 3652913.0799999987
+            },
+            "2.0": {
+              "total_dags": 353,
+              "on_time_dags": 252,
+              "total_tasks": 10806,
+              "on_time_tasks": 9805,
+              "total_delay": 14400.433041153228,
+              "total_energy": 188609.73683406055,
+              "total_comp": 3741116.970000002
+            },
+            "3.0": {
+              "total_dags": 315,
+              "on_time_dags": 301,
+              "total_tasks": 9585,
+              "on_time_tasks": 9462,
+              "total_delay": 5007.641339072117,
+              "total_energy": 169440.32411335828,
+              "total_comp": 3349387.570000002
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 10190.135793689518,
+          "completion_rate": 0.9253225806451613,
+          "dag_completion_rate": 0.781,
+          "avg_task_delay": 0.6558316637219996,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.400138795111776,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 323,
+              "on_time_dags": 192,
+              "total_tasks": 9977,
+              "on_time_tasks": 8347,
+              "total_delay": 12467.5109085601,
+              "total_energy": 176879.36073504025,
+              "total_comp": 3571521.7300000014
+            },
+            "2.0": {
+              "total_dags": 335,
+              "on_time_dags": 264,
+              "total_tasks": 10318,
+              "on_time_tasks": 9772,
+              "total_delay": 5567.256409125985,
+              "total_energy": 179075.11570611616,
+              "total_comp": 3559633.740000002
+            },
+            "3.0": {
+              "total_dags": 342,
+              "on_time_dags": 325,
+              "total_tasks": 10705,
+              "on_time_tasks": 10566,
+              "total_delay": 2296.014257695906,
+              "total_energy": 183449.82620730854,
+              "total_comp": 3612262.149999999
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 7157.176378537403,
+          "completion_rate": 0.8898709677419355,
+          "dag_completion_rate": 0.702,
+          "avg_task_delay": 1.2886191774023477,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.3359917671685,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 330,
+              "on_time_dags": 149,
+              "total_tasks": 10162,
+              "on_time_tasks": 7676,
+              "total_delay": 29708.45491403,
+              "total_energy": 172827.89202943433,
+              "total_comp": 3508912.7000000016
+            },
+            "2.0": {
+              "total_dags": 356,
+              "on_time_dags": 252,
+              "total_tasks": 11146,
+              "on_time_tasks": 10280,
+              "total_delay": 9293.270385619011,
+              "total_energy": 192836.85887319394,
+              "total_comp": 3857550.169999999
+            },
+            "3.0": {
+              "total_dags": 314,
+              "on_time_dags": 301,
+              "total_tasks": 9692,
+              "on_time_tasks": 9630,
+              "total_delay": 945.4691998237781,
+              "total_energy": 171750.99387959525,
+              "total_comp": 3376954.750000001
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 6995.213698001327,
+          "completion_rate": 0.8861290322580645,
+          "dag_completion_rate": 0.716,
+          "avg_task_delay": 2.3295474401064054,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.320589612908687,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 305,
+              "on_time_dags": 142,
+              "total_tasks": 9438,
+              "on_time_tasks": 7019,
+              "total_delay": 37756.719538533674,
+              "total_energy": 161013.75672187336,
+              "total_comp": 3263436.6800000016
+            },
+            "2.0": {
+              "total_dags": 357,
+              "on_time_dags": 264,
+              "total_tasks": 11133,
+              "on_time_tasks": 10230,
+              "total_delay": 24056.33692751331,
+              "total_energy": 192068.17580733282,
+              "total_comp": 3836856.999999999
+            },
+            "3.0": {
+              "total_dags": 338,
+              "on_time_dags": 310,
+              "total_tasks": 10429,
+              "on_time_tasks": 10221,
+              "total_delay": 10402.9141772516,
+              "total_energy": 183856.3454709631,
+              "total_comp": 3643123.9400000023
+            }
+          }
+        }
+      ],
+      "priority_stats": {
+        "1.5": {
+          "total_dags": 1660,
+          "on_time_dags": 814,
+          "total_tasks": 51244,
+          "on_time_tasks": 39687,
+          "total_delay": 135081.84551890017,
+          "total_energy": 881417.1117354557,
+          "total_comp": 17865984.980000004
+        },
+        "2.0": {
+          "total_dags": 1739,
+          "on_time_dags": 1286,
+          "total_tasks": 53989,
+          "on_time_tasks": 50007,
+          "total_delay": 59721.09392338021,
+          "total_energy": 938029.262790977,
+          "total_comp": 18698634.990000002
+        },
+        "3.0": {
+          "total_dags": 1601,
+          "on_time_dags": 1509,
+          "total_tasks": 49767,
+          "on_time_tasks": 49047,
+          "total_delay": 20859.75751875763,
+          "total_energy": 869938.8925802943,
+          "total_comp": 17152468.130000006
+        }
+      }
+    },
+    "EDF-task + PPO-proc": {
+      "avg_completion_rate": 0.9217935483870969,
+      "avg_dag_completion_rate": 0.7876000000000001,
+      "avg_task_delay": 0.18879912071482985,
+      "avg_energy": 17.355342619494174,
+      "avg_reward": 8610.43187595568,
+      "per_episode": [
+        {
+          "steps": 31000,
+          "total_reward": 9739.225758035553,
+          "completion_rate": 0.9528709677419355,
+          "dag_completion_rate": 0.816,
+          "avg_task_delay": 0.05134296550087022,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.352772907450213,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 370,
+              "on_time_dags": 252,
+              "total_tasks": 11058,
+              "on_time_tasks": 10161,
+              "total_delay": 913.6899824994508,
+              "total_energy": 192310.84113412755,
+              "total_comp": 3869200.79
+            },
+            "2.0": {
+              "total_dags": 338,
+              "on_time_dags": 295,
+              "total_tasks": 10586,
+              "on_time_tasks": 10217,
+              "total_delay": 446.74537701466454,
+              "total_energy": 185350.91110342776,
+              "total_comp": 3703477.110000001
+            },
+            "3.0": {
+              "total_dags": 292,
+              "on_time_dags": 269,
+              "total_tasks": 9356,
+              "on_time_tasks": 9161,
+              "total_delay": 231.19657101286134,
+              "total_energy": 160274.20789340147,
+              "total_comp": 3170739.720000002
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 7155.033360079425,
+          "completion_rate": 0.9056451612903226,
+          "dag_completion_rate": 0.747,
+          "avg_task_delay": 0.21959583919385395,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.35347043951351,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 332,
+              "on_time_dags": 192,
+              "total_tasks": 10609,
+              "on_time_tasks": 9120,
+              "total_delay": 3060.941895933154,
+              "total_energy": 182177.87819695505,
+              "total_comp": 3652913.0799999987
+            },
+            "2.0": {
+              "total_dags": 353,
+              "on_time_dags": 283,
+              "total_tasks": 10806,
+              "on_time_tasks": 10006,
+              "total_delay": 1946.4827199235424,
+              "total_energy": 188172.30804412597,
+              "total_comp": 3741116.9700000025
+            },
+            "3.0": {
+              "total_dags": 315,
+              "on_time_dags": 272,
+              "total_tasks": 9585,
+              "on_time_tasks": 8949,
+              "total_delay": 1800.0463991527783,
+              "total_energy": 167607.39738383767,
+              "total_comp": 3349387.570000002
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 12621.104531785108,
+          "completion_rate": 0.9691612903225807,
+          "dag_completion_rate": 0.871,
+          "avg_task_delay": 0.03860815039109839,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.37867035379872,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 323,
+              "on_time_dags": 248,
+              "total_tasks": 9977,
+              "on_time_tasks": 9379,
+              "total_delay": 687.460400625131,
+              "total_energy": 178021.7043224954,
+              "total_comp": 3571521.7300000014
+            },
+            "2.0": {
+              "total_dags": 335,
+              "on_time_dags": 293,
+              "total_tasks": 10318,
+              "on_time_tasks": 10068,
+              "total_delay": 391.3827742430998,
+              "total_energy": 178004.49528321304,
+              "total_comp": 3559633.7400000016
+            },
+            "3.0": {
+              "total_dags": 342,
+              "on_time_dags": 330,
+              "total_tasks": 10705,
+              "on_time_tasks": 10597,
+              "total_delay": 118.00948725581918,
+              "total_energy": 182712.58136205235,
+              "total_comp": 3612262.149999999
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 7862.462498048474,
+          "completion_rate": 0.9152258064516129,
+          "dag_completion_rate": 0.769,
+          "avg_task_delay": 0.1917899357952106,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.358209144174104,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 330,
+              "on_time_dags": 196,
+              "total_tasks": 10162,
+              "on_time_tasks": 8963,
+              "total_delay": 2323.8126943112516,
+              "total_energy": 175070.4015895193,
+              "total_comp": 3508912.7000000016
+            },
+            "2.0": {
+              "total_dags": 356,
+              "on_time_dags": 300,
+              "total_tasks": 11146,
+              "on_time_tasks": 10470,
+              "total_delay": 1679.267480117299,
+              "total_energy": 193075.53482065603,
+              "total_comp": 3857550.169999999
+            },
+            "3.0": {
+              "total_dags": 314,
+              "on_time_dags": 273,
+              "total_tasks": 9692,
+              "on_time_tasks": 8939,
+              "total_delay": 1942.407835222979,
+              "total_energy": 169958.54705922204,
+              "total_comp": 3376954.750000001
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 5674.3332318298435,
+          "completion_rate": 0.8660645161290322,
+          "dag_completion_rate": 0.735,
+          "avg_task_delay": 0.44265871269311613,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.333590252534314,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 305,
+              "on_time_dags": 186,
+              "total_tasks": 9438,
+              "on_time_tasks": 8018,
+              "total_delay": 4126.386312975069,
+              "total_energy": 162715.14291263354,
+              "total_comp": 3263436.6800000016
+            },
+            "2.0": {
+              "total_dags": 357,
+              "on_time_dags": 271,
+              "total_tasks": 11133,
+              "on_time_tasks": 9614,
+              "total_delay": 5136.784068086243,
+              "total_energy": 192506.38493466575,
+              "total_comp": 3836856.999999999
+            },
+            "3.0": {
+              "total_dags": 338,
+              "on_time_dags": 278,
+              "total_tasks": 10429,
+              "on_time_tasks": 9216,
+              "total_delay": 4459.249712425285,
+              "total_energy": 182119.76998126446,
+              "total_comp": 3643123.9400000023
+            }
+          }
+        }
+      ],
+      "priority_stats": {
+        "1.5": {
+          "total_dags": 1660,
+          "on_time_dags": 1074,
+          "total_tasks": 51244,
+          "on_time_tasks": 45641,
+          "total_delay": 11112.291286344054,
+          "total_energy": 890295.9681557307,
+          "total_comp": 17865984.980000004
+        },
+        "2.0": {
+          "total_dags": 1739,
+          "on_time_dags": 1442,
+          "total_tasks": 53989,
+          "on_time_tasks": 50375,
+          "total_delay": 9600.662419384847,
+          "total_energy": 937109.6341860886,
+          "total_comp": 18698634.990000006
+        },
+        "3.0": {
+          "total_dags": 1601,
+          "on_time_dags": 1422,
+          "total_tasks": 49767,
+          "on_time_tasks": 46862,
+          "total_delay": 8550.910005069723,
+          "total_energy": 862672.503679778,
+          "total_comp": 17152468.130000006
+        }
+      }
+    },
+    "PPO-task + EFT-proc": {
+      "avg_completion_rate": 0.8623483870967741,
+      "avg_dag_completion_rate": 0.6494,
+      "avg_task_delay": 1.1845436730366854,
+      "avg_energy": 17.62080980505317,
+      "avg_reward": 3973.125465698429,
+      "per_episode": [
+        {
+          "steps": 31000,
+          "total_reward": 4605.345877384325,
+          "completion_rate": 0.8668709677419355,
+          "dag_completion_rate": 0.648,
+          "avg_task_delay": 0.876129816128552,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.610608488366253,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 370,
+              "on_time_dags": 161,
+              "total_tasks": 11058,
+              "on_time_tasks": 8227,
+              "total_delay": 17462.596537017198,
+              "total_energy": 196213.52581125623,
+              "total_comp": 3869200.79
+            },
+            "2.0": {
+              "total_dags": 338,
+              "on_time_dags": 226,
+              "total_tasks": 10586,
+              "on_time_tasks": 9501,
+              "total_delay": 7222.030957213866,
+              "total_energy": 187984.08189627575,
+              "total_comp": 3703477.110000001
+            },
+            "3.0": {
+              "total_dags": 292,
+              "on_time_dags": 261,
+              "total_tasks": 9356,
+              "on_time_tasks": 9145,
+              "total_delay": 2475.396805754037,
+              "total_energy": 161731.25543182148,
+              "total_comp": 3170739.720000002
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 1721.882258092106,
+          "completion_rate": 0.8325806451612904,
+          "dag_completion_rate": 0.603,
+          "avg_task_delay": 1.4918824297964912,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.616346419487805,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 332,
+              "on_time_dags": 122,
+              "total_tasks": 10609,
+              "on_time_tasks": 7177,
+              "total_delay": 33046.45611770231,
+              "total_energy": 185392.12870259452,
+              "total_comp": 3652913.079999998
+            },
+            "2.0": {
+              "total_dags": 353,
+              "on_time_dags": 202,
+              "total_tasks": 10806,
+              "on_time_tasks": 9211,
+              "total_delay": 12458.310369226867,
+              "total_energy": 190256.76192299635,
+              "total_comp": 3741116.970000002
+            },
+            "3.0": {
+              "total_dags": 315,
+              "on_time_dags": 279,
+              "total_tasks": 9585,
+              "on_time_tasks": 9422,
+              "total_delay": 743.5888367620413,
+              "total_energy": 170457.84837853158,
+              "total_comp": 3349387.570000002
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 7450.160181498636,
+          "completion_rate": 0.9063225806451612,
+          "dag_completion_rate": 0.724,
+          "avg_task_delay": 0.5477092017417606,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.713471170119274,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 323,
+              "on_time_dags": 181,
+              "total_tasks": 9977,
+              "on_time_tasks": 8141,
+              "total_delay": 11733.228083793592,
+              "total_energy": 182423.73238927862,
+              "total_comp": 3571521.7300000014
+            },
+            "2.0": {
+              "total_dags": 335,
+              "on_time_dags": 236,
+              "total_tasks": 10318,
+              "on_time_tasks": 9465,
+              "total_delay": 4233.625120028758,
+              "total_energy": 181958.8913832317,
+              "total_comp": 3559633.740000002
+            },
+            "3.0": {
+              "total_dags": 342,
+              "on_time_dags": 307,
+              "total_tasks": 10705,
+              "on_time_tasks": 10490,
+              "total_delay": 1012.1320501722209,
+              "total_energy": 184734.98250118707,
+              "total_comp": 3612262.149999999
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 3811.614151763963,
+          "completion_rate": 0.8598709677419355,
+          "dag_completion_rate": 0.648,
+          "avg_task_delay": 1.0436671965585944,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.598890356077785,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 330,
+              "on_time_dags": 134,
+              "total_tasks": 10162,
+              "on_time_tasks": 7283,
+              "total_delay": 19887.786454180416,
+              "total_energy": 178181.78448746528,
+              "total_comp": 3508912.700000002
+            },
+            "2.0": {
+              "total_dags": 356,
+              "on_time_dags": 235,
+              "total_tasks": 11146,
+              "on_time_tasks": 9884,
+              "total_delay": 10701.786019420182,
+              "total_energy": 195545.40185177326,
+              "total_comp": 3857550.169999999
+            },
+            "3.0": {
+              "total_dags": 314,
+              "on_time_dags": 279,
+              "total_tasks": 9692,
+              "on_time_tasks": 9489,
+              "total_delay": 1764.110619715842,
+              "total_energy": 171838.41469917292,
+              "total_comp": 3376954.750000001
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 2276.624859753115,
+          "completion_rate": 0.8460967741935483,
+          "dag_completion_rate": 0.624,
+          "avg_task_delay": 1.9633297209580292,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.56473259121474,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 305,
+              "on_time_dags": 118,
+              "total_tasks": 9438,
+              "on_time_tasks": 6375,
+              "total_delay": 37165.37303174748,
+              "total_energy": 165575.16980351112,
+              "total_comp": 3263436.6800000016
+            },
+            "2.0": {
+              "total_dags": 357,
+              "on_time_dags": 217,
+              "total_tasks": 11133,
+              "on_time_tasks": 9759,
+              "total_delay": 19699.56082885899,
+              "total_energy": 195473.16046480447,
+              "total_comp": 3836856.999999999
+            },
+            "3.0": {
+              "total_dags": 338,
+              "on_time_dags": 289,
+              "total_tasks": 10429,
+              "on_time_tasks": 10095,
+              "total_delay": 3998.2874890924054,
+              "total_energy": 183458.38005934143,
+              "total_comp": 3643123.9400000023
+            }
+          }
+        }
+      ],
+      "priority_stats": {
+        "1.5": {
+          "total_dags": 1660,
+          "on_time_dags": 716,
+          "total_tasks": 51244,
+          "on_time_tasks": 37203,
+          "total_delay": 119295.440224441,
+          "total_energy": 907786.3411941058,
+          "total_comp": 17865984.980000004
+        },
+        "2.0": {
+          "total_dags": 1739,
+          "on_time_dags": 1116,
+          "total_tasks": 53989,
+          "on_time_tasks": 47820,
+          "total_delay": 54315.31329474866,
+          "total_energy": 951218.2975190816,
+          "total_comp": 18698634.990000002
+        },
+        "3.0": {
+          "total_dags": 1601,
+          "on_time_dags": 1415,
+          "total_tasks": 49767,
+          "on_time_tasks": 48641,
+          "total_delay": 9993.515801496545,
+          "total_energy": 872220.8810700545,
+          "total_comp": 17152468.130000006
+        }
+      }
+    },
+    "EDF-task + EFT-proc": {
+      "avg_completion_rate": 0.881425806451613,
+      "avg_dag_completion_rate": 0.6902000000000001,
+      "avg_task_delay": 0.2933821687005636,
+      "avg_energy": 17.605617392942868,
+      "avg_reward": 4874.519674600898,
+      "per_episode": [
+        {
+          "steps": 31000,
+          "total_reward": 6490.083470542998,
+          "completion_rate": 0.9189032258064516,
+          "dag_completion_rate": 0.713,
+          "avg_task_delay": 0.10685699342132886,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.58901889287072,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 370,
+              "on_time_dags": 203,
+              "total_tasks": 11058,
+              "on_time_tasks": 9478,
+              "total_delay": 2007.781745235182,
+              "total_energy": 196277.19485897885,
+              "total_comp": 3869200.79
+            },
+            "2.0": {
+              "total_dags": 338,
+              "on_time_dags": 253,
+              "total_tasks": 10586,
+              "on_time_tasks": 9894,
+              "total_delay": 919.578211173702,
+              "total_energy": 187456.39889584234,
+              "total_comp": 3703477.1100000013
+            },
+            "3.0": {
+              "total_dags": 292,
+              "on_time_dags": 257,
+              "total_tasks": 9356,
+              "on_time_tasks": 9114,
+              "total_delay": 385.20683965230853,
+              "total_energy": 161525.99192417052,
+              "total_comp": 3170739.720000002
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 2495.5943439292787,
+          "completion_rate": 0.8482258064516129,
+          "dag_completion_rate": 0.641,
+          "avg_task_delay": 0.3759909222951487,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.5842660522372,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 332,
+              "on_time_dags": 152,
+              "total_tasks": 10609,
+              "on_time_tasks": 8254,
+              "total_delay": 5194.826362870595,
+              "total_energy": 186147.12884588217,
+              "total_comp": 3652913.079999998
+            },
+            "2.0": {
+              "total_dags": 353,
+              "on_time_dags": 232,
+              "total_tasks": 10806,
+              "on_time_tasks": 9336,
+              "total_delay": 3656.695482078959,
+              "total_energy": 189850.48852128495,
+              "total_comp": 3741116.9700000025
+            },
+            "3.0": {
+              "total_dags": 315,
+              "on_time_dags": 257,
+              "total_tasks": 9585,
+              "on_time_tasks": 8705,
+              "total_delay": 2804.196746200053,
+              "total_energy": 169114.63025218624,
+              "total_comp": 3349387.570000002
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 9505.861979116455,
+          "completion_rate": 0.9436774193548387,
+          "dag_completion_rate": 0.786,
+          "avg_task_delay": 0.08259774718033477,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.68854930173837,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 323,
+              "on_time_dags": 209,
+              "total_tasks": 9977,
+              "on_time_tasks": 8935,
+              "total_delay": 1487.7780585293194,
+              "total_energy": 182494.27800963924,
+              "total_comp": 3571521.7300000014
+            },
+            "2.0": {
+              "total_dags": 335,
+              "on_time_dags": 263,
+              "total_tasks": 10318,
+              "on_time_tasks": 9834,
+              "total_delay": 782.3431000079107,
+              "total_energy": 180997.17076221178,
+              "total_comp": 3559633.7400000016
+            },
+            "3.0": {
+              "total_dags": 342,
+              "on_time_dags": 314,
+              "total_tasks": 10705,
+              "on_time_tasks": 10485,
+              "total_delay": 290.409004053147,
+              "total_energy": 184853.57958203918,
+              "total_comp": 3612262.149999999
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 4285.327827374752,
+          "completion_rate": 0.873,
+          "dag_completion_rate": 0.68,
+          "avg_task_delay": 0.3526733016930916,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.600061541105855,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 330,
+              "on_time_dags": 161,
+              "total_tasks": 10162,
+              "on_time_tasks": 8254,
+              "total_delay": 4374.950372574922,
+              "total_energy": 178595.63142479653,
+              "total_comp": 3508912.7000000016
+            },
+            "2.0": {
+              "total_dags": 356,
+              "on_time_dags": 251,
+              "total_tasks": 11146,
+              "on_time_tasks": 10013,
+              "total_delay": 3092.028716340552,
+              "total_energy": 194586.7354049063,
+              "total_comp": 3857550.169999999
+            },
+            "3.0": {
+              "total_dags": 314,
+              "on_time_dags": 268,
+              "total_tasks": 9692,
+              "on_time_tasks": 8796,
+              "total_delay": 3465.8932635703786,
+              "total_energy": 172419.54094457923,
+              "total_comp": 3376954.750000001
+            }
+          }
+        },
+        {
+          "steps": 31000,
+          "total_reward": 1595.7307520410054,
+          "completion_rate": 0.8233225806451613,
+          "dag_completion_rate": 0.631,
+          "avg_task_delay": 0.548791878912914,
+          "total_dags": 1000,
+          "total_tasks": 31000,
+          "avg_energy": 17.566191176762196,
+          "priority_stats": {
+            "1.5": {
+              "total_dags": 305,
+              "on_time_dags": 148,
+              "total_tasks": 9438,
+              "on_time_tasks": 7203,
+              "total_delay": 5810.187995360939,
+              "total_energy": 166154.07485813866,
+              "total_comp": 3263436.6800000016
+            },
+            "2.0": {
+              "total_dags": 357,
+              "on_time_dags": 229,
+              "total_tasks": 11133,
+              "on_time_tasks": 9270,
+              "total_delay": 6043.9485885407885,
+              "total_energy": 194607.1363805364,
+              "total_comp": 3836856.999999999
+            },
+            "3.0": {
+              "total_dags": 338,
+              "on_time_dags": 254,
+              "total_tasks": 10429,
+              "on_time_tasks": 9050,
+              "total_delay": 5158.411662398615,
+              "total_energy": 183790.7152409531,
+              "total_comp": 3643123.9400000023
+            }
+          }
+        }
+      ],
+      "priority_stats": {
+        "1.5": {
+          "total_dags": 1660,
+          "on_time_dags": 873,
+          "total_tasks": 51244,
+          "on_time_tasks": 42124,
+          "total_delay": 18875.524534570955,
+          "total_energy": 909668.3079974354,
+          "total_comp": 17865984.980000004
+        },
+        "2.0": {
+          "total_dags": 1739,
+          "on_time_dags": 1228,
+          "total_tasks": 53989,
+          "on_time_tasks": 48347,
+          "total_delay": 14494.594098141912,
+          "total_energy": 947497.9299647817,
+          "total_comp": 18698634.990000006
+        },
+        "3.0": {
+          "total_dags": 1601,
+          "on_time_dags": 1350,
+          "total_tasks": 49767,
+          "on_time_tasks": 46150,
+          "total_delay": 12104.117515874503,
+          "total_energy": 871704.4579439283,
+          "total_comp": 17152468.130000006
+        }
+      }
+    }
+  }
+}

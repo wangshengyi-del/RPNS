@@ -1,0 +1,217 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+arrival_rate=0.1000 (scaled=False, mean_nodes=136.8, ref=0.55@31.0, formula=fixed)
+DAG 数据集加载完成:
+  验证集: 0 个
+  测试集: 1000 个
+DAG dir=dataset/pegasus_wfcommons/dags | test files=1000 | max_dags/test=1000 | arrival_rate=0.1000
+
+>>> running HEFT ...
+-------max_arrival_time=9618.053708952155-------
+--------stop_time=9646.77607760009--------
+
+  [DIAG_EP] rewards: min=-23.472, max=22.332, mean=-0.915, pos_ratio=2.3%
+  [DIAG_EP] slacks: min=-100.389, max=71.751, mean=6.658
+  [DIAG_EP] r_delays: min=-3.904, max=0.210, mean=-0.975
+  [DIAG_EP] r_dags: min=-72.500, max=35.000, mean=1.485, count=239
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=528/1000, active_dags=0
+  [DIAG_EP] energy: total=2385942J, avg_per_task=17.4J
+  [DIAG_EP]   priority=1.5: DAG=152/370=41.1%, TASK=70.7%, avg_delay=3.49s, avg_energy=17.44J
+  [DIAG_EP]   priority=2.0: DAG=170/338=50.3%, TASK=77.8%, avg_delay=2.54s, avg_energy=17.37J
+  [DIAG_EP]   priority=3.0: DAG=206/292=70.5%, TASK=89.1%, avg_delay=1.33s, avg_energy=17.53J
+  [DIAG_EP] proc busy: Proc0:19047tasks,4255s busy, Proc1:19145tasks,4398s busy, Proc2:18655tasks,4695s busy, Proc3:12119tasks,5067s busy, Proc4:12826tasks,4812s busy, Proc5:12552tasks,4671s busy, Proc6:11427tasks,4611s busy, Proc7:9636tasks,4543s busy, Proc8:8126tasks,4529s busy, Proc9:7187tasks,4500s busy, Proc10:6075tasks,4475s busy
+-------max_arrival_time=9798.147441190835-------
+--------stop_time=9821.71679974056--------
+
+  [DIAG_EP] rewards: min=-23.324, max=12.374, mean=-0.922, pos_ratio=2.2%
+  [DIAG_EP] slacks: min=-136.929, max=68.598, mean=6.715
+  [DIAG_EP] r_delays: min=-4.011, max=0.210, mean=-0.983
+  [DIAG_EP] r_dags: min=-75.000, max=40.000, mean=-1.107, count=219
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=531/1000, active_dags=0
+  [DIAG_EP] energy: total=2388100J, avg_per_task=17.5J
+  [DIAG_EP]   priority=1.5: DAG=131/332=39.5%, TASK=68.8%, avg_delay=4.44s, avg_energy=17.51J
+  [DIAG_EP]   priority=2.0: DAG=182/353=51.6%, TASK=77.4%, avg_delay=2.76s, avg_energy=17.59J
+  [DIAG_EP]   priority=3.0: DAG=218/315=69.2%, TASK=89.9%, avg_delay=1.70s, avg_energy=17.27J
+  [DIAG_EP] proc busy: Proc0:19134tasks,4294s busy, Proc1:19059tasks,4440s busy, Proc2:18625tasks,4661s busy, Proc3:12047tasks,5035s busy, Proc4:12877tasks,4768s busy, Proc5:12417tasks,4659s busy, Proc6:11457tasks,4615s busy, Proc7:9728tasks,4562s busy, Proc8:8139tasks,4546s busy, Proc9:7204tasks,4513s busy, Proc10:6108tasks,4484s busy
+-------max_arrival_time=10018.868816477043-------
+--------stop_time=10030.570018477043--------
+
+  [DIAG_EP] rewards: min=-35.271, max=22.345, mean=-0.917, pos_ratio=2.6%
+  [DIAG_EP] slacks: min=-169.477, max=79.871, mean=6.250
+  [DIAG_EP] r_delays: min=-4.419, max=0.210, mean=-0.977
+  [DIAG_EP] r_dags: min=-60.000, max=35.000, mean=2.738, count=221
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=580/1000, active_dags=0
+  [DIAG_EP] energy: total=2389754J, avg_per_task=17.5J
+  [DIAG_EP]   priority=1.5: DAG=149/323=46.1%, TASK=76.1%, avg_delay=4.22s, avg_energy=17.36J
+  [DIAG_EP]   priority=2.0: DAG=186/335=55.5%, TASK=76.6%, avg_delay=4.27s, avg_energy=17.37J
+  [DIAG_EP]   priority=3.0: DAG=245/342=71.6%, TASK=85.7%, avg_delay=3.01s, avg_energy=17.67J
+  [DIAG_EP] proc busy: Proc0:19181tasks,4279s busy, Proc1:19309tasks,4425s busy, Proc2:18573tasks,4723s busy, Proc3:12209tasks,5081s busy, Proc4:12849tasks,4735s busy, Proc5:12501tasks,4645s busy, Proc6:11451tasks,4566s busy, Proc7:9598tasks,4505s busy, Proc8:7989tasks,4460s busy, Proc9:7139tasks,4449s busy, Proc10:5996tasks,4384s busy
+-------max_arrival_time=9731.195113619853-------
+--------stop_time=9752.020011349387--------
+
+  [DIAG_EP] rewards: min=-26.504, max=21.927, mean=-0.925, pos_ratio=2.3%
+  [DIAG_EP] slacks: min=-129.208, max=82.595, mean=6.755
+  [DIAG_EP] r_delays: min=-4.346, max=0.210, mean=-0.986
+  [DIAG_EP] r_dags: min=-37.500, max=27.500, mean=-1.357, count=223
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=540/1000, active_dags=0
+  [DIAG_EP] energy: total=2388335J, avg_per_task=17.5J
+  [DIAG_EP]   priority=1.5: DAG=139/330=42.1%, TASK=66.8%, avg_delay=4.77s, avg_energy=17.63J
+  [DIAG_EP]   priority=2.0: DAG=184/356=51.7%, TASK=77.5%, avg_delay=2.78s, avg_energy=17.44J
+  [DIAG_EP]   priority=3.0: DAG=217/314=69.1%, TASK=91.0%, avg_delay=1.48s, avg_energy=17.31J
+  [DIAG_EP] proc busy: Proc0:19155tasks,4308s busy, Proc1:19230tasks,4439s busy, Proc2:18599tasks,4656s busy, Proc3:12107tasks,5043s busy, Proc4:12663tasks,4795s busy, Proc5:12484tasks,4656s busy, Proc6:11474tasks,4591s busy, Proc7:9670tasks,4558s busy, Proc8:8168tasks,4519s busy, Proc9:7181tasks,4501s busy, Proc10:6064tasks,4437s busy
+-------max_arrival_time=9544.65697376699-------
+--------stop_time=9587.055874646783--------
+
+  [DIAG_EP] rewards: min=-23.884, max=14.478, mean=-0.935, pos_ratio=2.3%
+  [DIAG_EP] slacks: min=-151.149, max=57.513, mean=5.925
+  [DIAG_EP] r_delays: min=-4.254, max=0.210, mean=-0.997
+  [DIAG_EP] r_dags: min=-105.000, max=35.000, mean=0.807, count=220
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=536/1000, active_dags=0
+  [DIAG_EP] energy: total=2388185J, avg_per_task=17.5J
+  [DIAG_EP]   priority=1.5: DAG=117/305=38.4%, TASK=66.9%, avg_delay=6.09s, avg_energy=17.58J
+  [DIAG_EP]   priority=2.0: DAG=194/357=54.3%, TASK=78.3%, avg_delay=3.43s, avg_energy=17.53J
+  [DIAG_EP]   priority=3.0: DAG=225/338=66.6%, TASK=88.3%, avg_delay=1.75s, avg_energy=17.27J
+  [DIAG_EP] proc busy: Proc0:19182tasks,4291s busy, Proc1:19098tasks,4431s busy, Proc2:18672tasks,4676s busy, Proc3:11960tasks,5050s busy, Proc4:12809tasks,4777s busy, Proc5:12451tasks,4664s busy, Proc6:11432tasks,4602s busy, Proc7:9677tasks,4532s busy, Proc8:8206tasks,4525s busy, Proc9:7232tasks,4489s busy, Proc10:6076tasks,4437s busy
+HEFT                  DAG=54.30%±1.90%  TASK=78.53%±0.53%  DELAY=3.216
+
+>>> running EDF ...
+-------max_arrival_time=9618.053708952155-------
+--------stop_time=9642.656970981054--------
+
+  [DIAG_EP] rewards: min=-22.890, max=22.235, mean=-0.711, pos_ratio=3.5%
+  [DIAG_EP] slacks: min=-25.642, max=69.279, mean=9.681
+  [DIAG_EP] r_delays: min=-3.511, max=0.210, mean=-0.748
+  [DIAG_EP] r_dags: min=-25.000, max=25.000, mean=4.520, count=245
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=634/1000, active_dags=0
+  [DIAG_EP] energy: total=2391206J, avg_per_task=17.5J
+  [DIAG_EP]   priority=1.5: DAG=191/370=51.6%, TASK=86.3%, avg_delay=0.51s, avg_energy=17.49J
+  [DIAG_EP]   priority=2.0: DAG=212/338=62.7%, TASK=91.1%, avg_delay=0.37s, avg_energy=17.40J
+  [DIAG_EP]   priority=3.0: DAG=231/292=79.1%, TASK=93.6%, avg_delay=0.31s, avg_energy=17.56J
+  [DIAG_EP] proc busy: Proc0:19952tasks,4152s busy, Proc1:16826tasks,4438s busy, Proc2:14187tasks,4875s busy, Proc3:11255tasks,5148s busy, Proc4:12718tasks,4792s busy, Proc5:13521tasks,4553s busy, Proc6:12922tasks,4416s busy, Proc7:11203tasks,4344s busy, Proc8:9249tasks,4293s busy, Proc9:8157tasks,4288s busy, Proc10:6805tasks,4237s busy
+-------max_arrival_time=9798.147441190835-------
+--------stop_time=9818.050983505258--------
+
+  [DIAG_EP] rewards: min=-23.382, max=22.479, mean=-0.723, pos_ratio=3.3%
+  [DIAG_EP] slacks: min=-42.550, max=63.739, mean=9.923
+  [DIAG_EP] r_delays: min=-3.731, max=0.210, mean=-0.761
+  [DIAG_EP] r_dags: min=-22.500, max=37.500, mean=2.604, count=240
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=650/1000, active_dags=0
+  [DIAG_EP] energy: total=2391733J, avg_per_task=17.5J
+  [DIAG_EP]   priority=1.5: DAG=166/332=50.0%, TASK=84.0%, avg_delay=0.77s, avg_energy=17.54J
+  [DIAG_EP]   priority=2.0: DAG=230/353=65.2%, TASK=89.6%, avg_delay=0.51s, avg_energy=17.60J
+  [DIAG_EP]   priority=3.0: DAG=254/315=80.6%, TASK=94.1%, avg_delay=0.23s, avg_energy=17.30J
+  [DIAG_EP] proc busy: Proc0:19828tasks,4147s busy, Proc1:16933tasks,4470s busy, Proc2:14068tasks,4857s busy, Proc3:11078tasks,5158s busy, Proc4:12839tasks,4770s busy, Proc5:13531tasks,4525s busy, Proc6:13033tasks,4449s busy, Proc7:11188tasks,4344s busy, Proc8:9319tasks,4303s busy, Proc9:8186tasks,4287s busy, Proc10:6792tasks,4222s busy
+-------max_arrival_time=10018.868816477043-------
+--------stop_time=10031.044079516256--------
+
+  [DIAG_EP] rewards: min=-23.117, max=22.312, mean=-0.723, pos_ratio=3.8%
+  [DIAG_EP] slacks: min=-37.587, max=80.141, mean=9.793
+  [DIAG_EP] r_delays: min=-3.536, max=0.210, mean=-0.762
+  [DIAG_EP] r_dags: min=-22.500, max=35.000, mean=5.445, count=298
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=679/1000, active_dags=0
+  [DIAG_EP] energy: total=2395522J, avg_per_task=17.5J
+  [DIAG_EP]   priority=1.5: DAG=192/323=59.4%, TASK=85.0%, avg_delay=0.82s, avg_energy=17.38J
+  [DIAG_EP]   priority=2.0: DAG=220/335=65.7%, TASK=85.7%, avg_delay=0.93s, avg_energy=17.41J
+  [DIAG_EP]   priority=3.0: DAG=267/342=78.1%, TASK=89.8%, avg_delay=0.76s, avg_energy=17.73J
+  [DIAG_EP] proc busy: Proc0:20170tasks,4164s busy, Proc1:17143tasks,4478s busy, Proc2:14260tasks,4917s busy, Proc3:11217tasks,5156s busy, Proc4:12892tasks,4726s busy, Proc5:13424tasks,4489s busy, Proc6:12810tasks,4373s busy, Proc7:11090tasks,4293s busy, Proc8:9221tasks,4253s busy, Proc9:7944tasks,4178s busy, Proc10:6624tasks,4117s busy
+-------max_arrival_time=9731.195113619853-------
+--------stop_time=9749.030536192524--------
+
+  [DIAG_EP] rewards: min=-23.632, max=22.266, mean=-0.725, pos_ratio=3.4%
+  [DIAG_EP] slacks: min=-31.863, max=82.747, mean=9.994
+  [DIAG_EP] r_delays: min=-3.466, max=0.210, mean=-0.763
+  [DIAG_EP] r_dags: min=-30.000, max=30.000, mean=0.638, count=235
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=648/1000, active_dags=0
+  [DIAG_EP] energy: total=2390855J, avg_per_task=17.5J
+  [DIAG_EP]   priority=1.5: DAG=177/330=53.6%, TASK=82.6%, avg_delay=0.79s, avg_energy=17.64J
+  [DIAG_EP]   priority=2.0: DAG=218/356=61.2%, TASK=90.2%, avg_delay=0.61s, avg_energy=17.45J
+  [DIAG_EP]   priority=3.0: DAG=253/314=80.6%, TASK=95.2%, avg_delay=0.18s, avg_energy=17.34J
+  [DIAG_EP] proc busy: Proc0:19863tasks,4125s busy, Proc1:16946tasks,4445s busy, Proc2:14102tasks,4885s busy, Proc3:11261tasks,5173s busy, Proc4:12767tasks,4797s busy, Proc5:13501tasks,4515s busy, Proc6:12920tasks,4433s busy, Proc7:11213tasks,4343s busy, Proc8:9363tasks,4316s busy, Proc9:8096tasks,4250s busy, Proc10:6763tasks,4207s busy
+-------max_arrival_time=9544.65697376699-------
+--------stop_time=9588.870124646794--------
+
+  [DIAG_EP] rewards: min=-23.237, max=22.430, mean=-0.727, pos_ratio=3.4%
+  [DIAG_EP] slacks: min=-33.846, max=57.665, mean=9.456
+  [DIAG_EP] r_delays: min=-3.481, max=0.210, mean=-0.768
+  [DIAG_EP] r_dags: min=-37.500, max=45.000, mean=5.828, count=329
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=646/1000, active_dags=0
+  [DIAG_EP] energy: total=2392045J, avg_per_task=17.5J
+  [DIAG_EP]   priority=1.5: DAG=145/305=47.5%, TASK=80.5%, avg_delay=1.03s, avg_energy=17.63J
+  [DIAG_EP]   priority=2.0: DAG=233/357=65.3%, TASK=89.3%, avg_delay=0.57s, avg_energy=17.54J
+  [DIAG_EP]   priority=3.0: DAG=268/338=79.3%, TASK=92.4%, avg_delay=0.59s, avg_energy=17.29J
+  [DIAG_EP] proc busy: Proc0:19819tasks,4120s busy, Proc1:17193tasks,4501s busy, Proc2:14049tasks,4858s busy, Proc3:11232tasks,5157s busy, Proc4:12781tasks,4773s busy, Proc5:13423tasks,4514s busy, Proc6:12897tasks,4420s busy, Proc7:11141tasks,4342s busy, Proc8:9353tasks,4310s busy, Proc9:8143tasks,4283s busy, Proc10:6764tasks,4204s busy
+EDF                   DAG=65.14%±1.49%  TASK=88.59%±1.15%  DELAY=0.601
+  已从 checkpoint.config 覆盖架构参数: type=gat ablation=none fusion=gate joint=0 adj=down
+  processor pair features: True
+
+>>> running Learned(edf) ...
+-------max_arrival_time=9618.053708952155-------
+--------stop_time=9644.886076933439--------
+
+  [DIAG_EP] rewards: min=-22.692, max=22.368, mean=-0.701, pos_ratio=4.0%
+  [DIAG_EP] slacks: min=-24.108, max=67.954, mean=9.310
+  [DIAG_EP] r_delays: min=-3.425, max=0.210, mean=-0.739
+  [DIAG_EP] r_dags: min=-22.500, max=37.500, mean=6.976, count=248
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=671/1000, active_dags=0
+  [DIAG_EP] energy: total=2366958J, avg_per_task=17.3J
+  [DIAG_EP]   priority=1.5: DAG=215/370=58.1%, TASK=86.3%, avg_delay=0.56s, avg_energy=17.35J
+  [DIAG_EP]   priority=2.0: DAG=220/338=65.1%, TASK=90.0%, avg_delay=0.44s, avg_energy=17.24J
+  [DIAG_EP]   priority=3.0: DAG=236/292=80.8%, TASK=92.9%, avg_delay=0.38s, avg_energy=17.31J
+  [DIAG_EP] proc busy: Proc0:18244tasks,4189s busy, Proc1:17668tasks,4351s busy, Proc2:15981tasks,4422s busy, Proc3:11531tasks,4936s busy, Proc4:13475tasks,5184s busy, Proc5:12902tasks,4915s busy, Proc6:12509tasks,4872s busy, Proc7:10566tasks,4791s busy, Proc8:8983tasks,4829s busy, Proc9:7843tasks,4794s busy, Proc10:7093tasks,5029s busy
+-------max_arrival_time=9798.147441190835-------
+--------stop_time=9818.28640091703--------
+
+  [DIAG_EP] rewards: min=-23.048, max=22.555, mean=-0.718, pos_ratio=3.9%
+  [DIAG_EP] slacks: min=-43.081, max=63.250, mean=9.473
+  [DIAG_EP] r_delays: min=-3.746, max=0.210, mean=-0.756
+  [DIAG_EP] r_dags: min=-30.000, max=27.500, mean=3.514, count=244
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=685/1000, active_dags=0
+  [DIAG_EP] energy: total=2366339J, avg_per_task=17.3J
+  [DIAG_EP]   priority=1.5: DAG=195/332=58.7%, TASK=83.7%, avg_delay=0.83s, avg_energy=17.42J
+  [DIAG_EP]   priority=2.0: DAG=238/353=67.4%, TASK=88.9%, avg_delay=0.58s, avg_energy=17.42J
+  [DIAG_EP]   priority=3.0: DAG=252/315=80.0%, TASK=92.4%, avg_delay=0.31s, avg_energy=17.05J
+  [DIAG_EP] proc busy: Proc0:18178tasks,4223s busy, Proc1:17378tasks,4312s busy, Proc2:16263tasks,4417s busy, Proc3:11607tasks,4945s busy, Proc4:13306tasks,5221s busy, Proc5:12822tasks,4882s busy, Proc6:12555tasks,4893s busy, Proc7:10690tasks,4790s busy, Proc8:8987tasks,4848s busy, Proc9:7893tasks,4805s busy, Proc10:7116tasks,5057s busy
+-------max_arrival_time=10018.868816477043-------
+--------stop_time=10030.581073762383--------
+
+  [DIAG_EP] rewards: min=-23.027, max=14.817, mean=-0.716, pos_ratio=4.2%
+  [DIAG_EP] slacks: min=-36.361, max=79.151, mean=9.397
+  [DIAG_EP] r_delays: min=-3.556, max=0.210, mean=-0.755
+  [DIAG_EP] r_dags: min=-22.500, max=35.000, mean=5.801, count=231
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=705/1000, active_dags=0
+  [DIAG_EP] energy: total=2366849J, avg_per_task=17.3J
+  [DIAG_EP]   priority=1.5: DAG=208/323=64.4%, TASK=85.6%, avg_delay=0.91s, avg_energy=17.25J
+  [DIAG_EP]   priority=2.0: DAG=231/335=69.0%, TASK=85.2%, avg_delay=1.06s, avg_energy=17.19J
+  [DIAG_EP]   priority=3.0: DAG=266/342=77.8%, TASK=89.2%, avg_delay=0.88s, avg_energy=17.46J
+  [DIAG_EP] proc busy: Proc0:18381tasks,4186s busy, Proc1:17614tasks,4350s busy, Proc2:16097tasks,4430s busy, Proc3:11697tasks,4933s busy, Proc4:13441tasks,5238s busy, Proc5:12668tasks,4871s busy, Proc6:12579tasks,4871s busy, Proc7:10572tasks,4791s busy, Proc8:8896tasks,4812s busy, Proc9:7817tasks,4754s busy, Proc10:7033tasks,4986s busy
+-------max_arrival_time=9731.195113619853-------
+--------stop_time=9749.61933585919--------
+
+  [DIAG_EP] rewards: min=-30.230, max=14.588, mean=-0.715, pos_ratio=4.0%
+  [DIAG_EP] slacks: min=-31.308, max=82.270, mean=9.574
+  [DIAG_EP] r_delays: min=-3.497, max=0.209, mean=-0.754
+  [DIAG_EP] r_dags: min=-30.000, max=30.000, mean=4.170, count=238
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=688/1000, active_dags=0
+  [DIAG_EP] energy: total=2364256J, avg_per_task=17.3J
+  [DIAG_EP]   priority=1.5: DAG=202/330=61.2%, TASK=82.4%, avg_delay=0.89s, avg_energy=17.50J
+  [DIAG_EP]   priority=2.0: DAG=229/356=64.3%, TASK=89.5%, avg_delay=0.69s, avg_energy=17.25J
+  [DIAG_EP]   priority=3.0: DAG=257/314=81.8%, TASK=94.4%, avg_delay=0.22s, avg_energy=17.09J
+  [DIAG_EP] proc busy: Proc0:18172tasks,4114s busy, Proc1:17654tasks,4335s busy, Proc2:16206tasks,4446s busy, Proc3:11417tasks,5015s busy, Proc4:13378tasks,5231s busy, Proc5:12985tasks,4856s busy, Proc6:12512tasks,4883s busy, Proc7:10554tasks,4784s busy, Proc8:8982tasks,4852s busy, Proc9:7877tasks,4792s busy, Proc10:7058tasks,5024s busy
+-------max_arrival_time=9544.65697376699-------
+--------stop_time=9590.148529218217--------
+
+  [DIAG_EP] rewards: min=-15.177, max=22.153, mean=-0.721, pos_ratio=3.9%
+  [DIAG_EP] slacks: min=-37.216, max=57.593, mean=8.962
+  [DIAG_EP] r_delays: min=-3.509, max=0.210, mean=-0.762
+  [DIAG_EP] r_dags: min=-22.500, max=27.500, mean=7.303, count=241
+  [DIAG_EP] total_tasks_completed=136795, valid_dag_completion=675/1000, active_dags=0
+  [DIAG_EP] energy: total=2365810J, avg_per_task=17.3J
+  [DIAG_EP]   priority=1.5: DAG=165/305=54.1%, TASK=80.5%, avg_delay=1.18s, avg_energy=17.48J
+  [DIAG_EP]   priority=2.0: DAG=241/357=67.5%, TASK=87.8%, avg_delay=0.67s, avg_energy=17.33J
+  [DIAG_EP]   priority=3.0: DAG=269/338=79.6%, TASK=90.8%, avg_delay=0.73s, avg_energy=17.08J
+  [DIAG_EP] proc busy: Proc0:18513tasks,4188s busy, Proc1:17429tasks,4324s busy, Proc2:16297tasks,4427s busy, Proc3:11501tasks,4967s busy, Proc4:13399tasks,5267s busy, Proc5:12749tasks,4817s busy, Proc6:12515tasks,4890s busy, Proc7:10493tasks,4809s busy, Proc8:9016tasks,4824s busy, Proc9:7827tasks,4788s busy, Proc10:7056tasks,5010s busy
+Learned(edf)          DAG=68.48%±1.19%  TASK=87.93%±1.12%  DELAY=0.691
+
+写入: dataset/pegasus_wfcommons/ood_eval_summary_arr0.1.json
